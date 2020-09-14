@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cakes&Bakes</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width , intial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="images/logo.png" class="logo">
+				<ul class="main-nav animate__animated animate__slideInDown" id="check-class">
+					<li><a href="#">CAKE DELIVERY</a></li>
+					<li><a href="#">HOW TO ORDER</a></li>
+					<li><a href="#">CHECK MORE</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+				<a href="#" class="mobile-size" onclick="slideshow()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</div>
+		</nav>
+		<div class="maincontent">
+		<h1>
+			WELCOME TO <span class="colchange">BAKES & CAKES</span>.<br>
+			HOUSE OF CAKE LOVERS.
+		</h1>
+			<a href="#" class="btn btn1">CLICK TO ORDER</a>
+			<a href="#" class="btn btn2">SHOW MORE</a>
+		</div>
+	</header>
+	<script type="text/javascript">
+		function slideshow() {
+			var x=document.getElementById('check-class');
+			if (x.style.display==="none") {
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>
